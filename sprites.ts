@@ -951,23 +951,23 @@ namespace tileworld {
 
     // rule types
     export const negate = img`
-    . . . . . . . . . . . . . . . .
-    . . . . . . . . . . . . . . . .
-    . . . . . 2 2 2 2 2 2 2 . . . .
-    . . . . 2 2 2 2 2 2 2 2 2 . . .
-    . . . 2 2 2 1 1 1 1 1 2 2 2 . .
-    . . 2 2 2 1 1 1 1 1 2 2 2 2 2 .
-    . . 2 2 1 1 1 1 1 2 2 2 1 2 2 .
-    . . 2 2 1 1 1 1 2 2 2 1 1 2 2 .
-    . . 2 2 1 1 1 2 2 2 1 1 1 2 2 .
-    . . 2 2 1 1 2 2 2 1 1 1 1 2 2 .
-    . . 2 2 1 2 2 2 1 1 1 1 1 2 2 .
-    . . 2 2 2 2 2 1 1 1 1 1 2 2 2 .
-    . . . 2 2 2 1 1 1 1 1 2 2 2 . .
-    . . . . 2 2 2 2 2 2 2 2 2 . . .
-    . . . . . 2 2 2 2 2 2 2 . . . .
-    . . . . . . . . . . . . . . . .
-`;
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . 2 2 2 2 2 2 2 . . . .
+        . . . . 2 2 2 2 2 2 2 2 2 . . .
+        . . . 2 2 2 1 1 1 1 1 2 2 2 . .
+        . . 2 2 2 1 1 1 1 1 2 2 2 2 2 .
+        . . 2 2 1 1 1 1 1 2 2 2 1 2 2 .
+        . . 2 2 1 1 1 1 2 2 2 1 1 2 2 .
+        . . 2 2 1 1 1 2 2 2 1 1 1 2 2 .
+        . . 2 2 1 1 2 2 2 1 1 1 1 2 2 .
+        . . 2 2 1 2 2 2 1 1 1 1 1 2 2 .
+        . . 2 2 2 2 2 1 1 1 1 1 2 2 2 .
+        . . . 2 2 2 1 1 1 1 1 2 2 2 . .
+        . . . . 2 2 2 2 2 2 2 2 2 . . .
+        . . . . . 2 2 2 2 2 2 2 . . . .
+        . . . . . . . . . . . . . . . .
+    `;
 
     // the sprites here are for the gallery
     // and the user to make use of
@@ -1385,8 +1385,26 @@ namespace tileworld {
         f f f f c c c f f f c c c c f f
         f f f f f f f f f c c c c c c f
     `;
+    const mushroom = img`
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . b b b b . . . . . .
+        . . . . b b 3 3 3 3 b b . . . .
+        . . . c b 3 3 3 3 1 1 b c . . .
+        . . c b 3 3 3 3 3 1 1 1 b c . .
+        . c b 1 1 1 3 3 3 3 1 1 3 c c .
+        c b d 1 1 1 3 3 3 3 3 3 3 b b c
+        c b b d 1 3 3 3 3 3 1 1 1 b b c
+        c b b b 3 3 1 1 3 3 1 1 d d b c
+        . c b b b d d 1 1 3 b d d d c .
+        . . c c b b d d b b b b c c . .
+        . . . . c c c c c c c c . . . .
+        . . . . . b b d 1 1 b . . . . .
+        . . . . . b d d 1 1 b . . . . .
+    `;
 
     // up to 15 max
-    export const gallerySprites = [player, ship, snakeHead, diamond, alien, missile, twCursor, boulder, enemy, apple, snakeBody ];
+    export const gallerySprites = [player, ship, snakeHead, diamond, mushroom, missile, twCursor, boulder, enemy, apple, snakeBody ];
     export const galleryTiles = [brick, grass, water, dirt, dirt2, space, wall];
 }

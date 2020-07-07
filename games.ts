@@ -765,7 +765,7 @@ settings.writeBuffer("TW7-RuleB6", hex`
 6310220004160400`);
 settings.writeNumber("TW7-PlayerN",0);
 }
-
+//test
 // base rules: 7
 // derived rules: 12 (1.7142857142857142)
 // whendos: 11 (1.5714285714285714)
